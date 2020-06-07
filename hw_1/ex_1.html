@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		let temperatureInCelsius = +prompt('введите температуру в градусах Цельсия');
+		let temperatureInFahrenheit = (9 / 5) * temperatureInCelsius + 32;
+
+		alert(`${temperatureInCelsius} градус(ов) Цельсия = ${temperatureInFahrenheit.toFixed(1)} градус(ов) Фаренгейта`);
+
+		/*
+		при выводе данных немного округлил конечный результат,
+		дабы не получать значений вроде "98.60000000000001"
+		и тому подобных
+		*/
+
+	</script>
+</body>
+</html>
