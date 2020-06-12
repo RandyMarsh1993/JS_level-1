@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict'
+
+		let a = prompt('введите первое число', 9);
+		let b = prompt('введите второе число', -7);
+		let result = null;
+		/*код был бы короче без лишней переменной - математические операции можно было бы совершить в alert, например. Но код с переменной result, по-моему, немного более понятен*/
+
+		a = parseInt(a);
+		b = parseInt(b);
+
+		if (a >= 0 && b >= 0) {
+			result = a - b;
+			alert('разность чисел равна ' + result);
+		} else if (a < 0 && b < 0) {
+			result = a * b;
+			alert('произведение чисел равно ' + result);
+		} else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+			result = a + b;
+			alert('сумма чисел равна ' + result);
+		} else {
+			alert('в следующий раз вводите числа');
+		}
+		//вынес в отдельный файл 3_02 немного доработанный вариант.
+
+	</script>
+</body>
+</html>
