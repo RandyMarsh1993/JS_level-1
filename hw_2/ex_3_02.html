@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		
+		let a = null;
+		let b = null;
+		let result = null;
+
+		function inputNumber1() {
+			a = prompt('введите первое число', 34);
+			a = parseInt(a);
+
+			if (isNaN(a)) {
+				alert('Нужно было ввести число. Попытайтесь снова.');
+				inputNumber1();
+			}	
+			return a;
+		}
+
+		//пытался сделать одну функцию с параметрами num и text, но никак не смог заставить её корректно работать
+		//поэтому получился такой ужас...
+
+		function inputNumber2() {
+			b = prompt('введите второе число', -9);
+			b = parseInt(b);
+
+			if (isNaN(b)) {
+				alert('Нужно было ввести число. Попытайтесь снова.');
+				inputNumber2();
+			}	
+			return b;
+		}
+
+		function outputDifference() {
+			result = a - b;
+			alert('разность чисел равна ' + result);
+		}
+
+		function outputProduct() {
+			result = a * b;
+			alert('произведение чисел равно ' + result);
+		}
+
+		function outputSum() {
+			result = a + b;
+			alert('сумма чисел равна ' + result);
+		}
+
+		
+		inputNumber1();
+		inputNumber2();
+
+		if (a >= 0 && b >= 0) {
+			outputDifference();
+		} else if (a < 0 && b < 0) {
+			outputProduct();
+		} else {
+			outputSum();
+		}
+
+	</script>
+</body>
+</html>
