@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		const products = [
+			{
+				id: 3,
+				price: 200,
+			},
+			{
+				id: 4,
+				price: 900,
+			},
+			{
+				id: 1,
+				price: 1000,
+			},
+		];
+
+		products.forEach(product => {
+			product.oldPrice = product.price; //на всякий случай сохраним информацию о цене без скидки
+			product.discount = '15%';		  //и о размере скидки тоже
+			product.price = product.price / 100 * 85;
+		});
+
+		console.log(products);
+
+		//ещё один вариант вывода некоторых данных
+		for (let i = 0; i < products.length; i++) {
+			console.log('id товара: ' + products[i].id);
+			console.log('старая цена: ' + products[i].oldPrice);
+			console.log('цена со скидкой: ' + products[i].price);
+		}
+
+	</script>
+</body>
+</html>
