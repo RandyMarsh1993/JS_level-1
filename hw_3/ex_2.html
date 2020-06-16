@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		//сохранил оригинальную нумерацию заданий (в дз начинается с номера 2)
+
+		for ( let i = 0; i <= 10; i++ ) {
+
+			let textForZero = ' - это ноль';
+			let textForOdd = ' - нечетное число';
+			let textForEven = ' - четное число';
+			//можно было обойтись и без лишних переменных, но захотелось так)
+
+			if ( i === 0 ) {
+				console.log(i + textForZero);
+			} else if ( i % 2 === 1 ) {
+				console.log(i + textForOdd);
+			} else if ( i % 2 === 0 ) {
+				console.log(i + textForEven);
+			}
+		}
+	</script>
+</body>
+</html>
