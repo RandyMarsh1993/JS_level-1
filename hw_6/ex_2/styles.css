@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 90px;
+}
+
+h1 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 55px;
+	text-align: center;
+	margin-top: 50px;
+	opacity: 0.5;
+}
+
+.gallery {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.images {
+	max-width: 270px;
+}
+
+a {
+	text-decoration: none;
+}
