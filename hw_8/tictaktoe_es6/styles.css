@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#game {
+	width: 210px;
+	margin: 50px auto;
+}
+
+#game td {
+	width: 70px;
+	height: 70px;
+	border: 1px solid black;
+	text-align: center;
+}
